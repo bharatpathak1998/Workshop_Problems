@@ -10,9 +10,8 @@ public class ReplaceStringChar {
                 } else {
                     ch[j] = '0';
                 }
-                arr[i] = String.valueOf(ch);
             }
-            System.out.print(arr[i] + " ");
+            System.out.print(String.valueOf(ch) + " ");
         }
     }
 

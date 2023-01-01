@@ -1,3 +1,5 @@
+package marble_Stream_Program;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -53,13 +55,11 @@ class Marbles {
     }
 
     public void display() {
-        for (int i = 0; i < list.size(); i++) {
-            Marble marble = list.get(i);
-            System.out.println(marble);
-        }
+        list.forEach(System.out::println);
     }
 
-    public void minPrice() {
+    public void minPriceOfRed() {
+        System.out.println("\nMinimum Price Of Red Marble : ");
         list.stream().filter(i -> i.getColor().equals("red"))
                 .min(Comparator.comparing(Marble::getPrice))
                 .ifPresent(System.out::println);
@@ -71,6 +71,6 @@ class MarbleMain {
         Marbles marbles = new Marbles();
         marbles.add();
         marbles.display();
-        marbles.minPrice();
+        marbles.minPriceOfRed();
     }
 }
