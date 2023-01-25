@@ -1,20 +1,20 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListConcept {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>(Arrays.asList("Volvo", "Bharat", "Mohit", "Yash"));
-        list.set(0, "Sonal");
+        list.set(1, "Sonal");
         System.out.println(list);
 //        list.stream().max(Integer::sum).ifPresent(System.out::println);
-//
-        list.sort(Comparator.naturalOrder());
-        System.out.println(list);
 
-        list.sort(Comparator.reverseOrder());
+        Collections.sort(list);
         System.out.println(list);
+//
+//        list.sort(Comparator.naturalOrder());
+//        System.out.println(list);
+//
+//        list.sort(Comparator.reverseOrder());
+//        System.out.println(list);
 //        list.stream().max(String::compareTo).ifPresent(System.out::println);
 //        list.sort(Comparator.comparingInt(Integer::intValue).reversed());
 //        list.stream().max(Integer::compare).ifPresent(System.out::println);

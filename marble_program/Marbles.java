@@ -54,6 +54,6 @@ public class Marbles {
                 min = marble.getPrice();
             }
         }
-        System.out.println("Minimum Price Of Red marble_Stream_Program.Marble : " + min);
+        System.out.println("Minimum Price Of Red marble : " + min);
     }
 }

@@ -6,8 +6,10 @@ public class CountChar {
         int count = 0;
         for (int i = 0; i < name.length(); i++) {
             char ch = name.charAt(i);
-            System.out.print(ch + " ");
-            count++;
+            if (ch != ' ') {
+//                System.out.print(ch + " ");
+                count++;
+            }
         }
         return count;
     }
@@ -18,7 +20,6 @@ public class CountChar {
         String name = sc.nextLine();
 
         CountChar countChar = new CountChar();
-        System.out.println("\nNumber Of Character : " + countChar.countChar(name));
-
+        System.out.println("Number Of Character : " + countChar.countChar(name));
     }
 }

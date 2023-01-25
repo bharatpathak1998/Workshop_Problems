@@ -1,20 +1,20 @@
-package marble_program;
+package practice_problems;
 
 public class Marble {
 
-    String color;
-    int price;
+    private String color;
+    private int price;
 
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public int getPrice() {
         return price;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public void setPrice(int price) {
