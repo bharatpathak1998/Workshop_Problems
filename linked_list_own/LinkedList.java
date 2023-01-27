@@ -49,7 +49,7 @@ public class LinkedList {
     public void print() {
         Node current = head;
         while (current != null) {
-            System.out.println(current.key);
+            System.out.print(current.key + " ");
             current = current.next;
         }
         System.out.println();

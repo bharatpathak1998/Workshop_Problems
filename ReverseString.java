@@ -4,8 +4,8 @@ public class ReverseString {
 
     void reverseName(String str) {
         System.out.print("Reverse of a String '" + str + "' is : ");
-        for (int i = str.length(); i > 0; i--) {
-            System.out.print(str.charAt(i - 1));
+        for (int i = str.length() - 1; i >= 0; i--) {
+            System.out.print(str.charAt(i));
         }
     }
 
