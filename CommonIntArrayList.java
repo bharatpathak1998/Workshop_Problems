@@ -13,7 +13,7 @@ public class CommonIntArrayList {
 
     public static void main(String[] args) {
         ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(3, 5, 6, 7, 1));
-        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(3, 5, 6, 7, 1));
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(3, 5, 5, 7, 1));
 
         CommonIntArrayList commonNameIntArrayList = new CommonIntArrayList();
         System.out.println(commonNameIntArrayList.commonIntList(list1, list2));
